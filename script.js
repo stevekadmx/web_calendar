@@ -36,6 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (j === 0) {
                     cell.classList.add('sunday');
                 }
+
+                // Highlight today's date
+                if (
+                    currentDate.getFullYear() === new Date().getFullYear() &&
+                    currentDate.getMonth() === new Date().getMonth() &&
+                    parseInt(cell.textContent) === new Date().getDate()
+                ) {
+                    cell.classList.add('today');
+                }
             }
         }
     }
