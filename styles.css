@@ -35,3 +35,7 @@ body {
 .sunday {
     color: red;
 }
+
+.today {
+    background-color: #ffc;
+}
